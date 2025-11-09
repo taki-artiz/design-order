@@ -1,0 +1,35 @@
+.ql-highlight {
+    display: inline;  /* インライン要素として指定 */
+    background: linear-gradient(transparent 60%, #fff16e 60%);
+    padding: 0 2px;  /* 文字の周りに余白を追加 */
+}
+
+.ql-highlight.relative.group {
+    content: '';
+    display: inline-block;
+    background: url('../quill/tool-icon.svg') no-repeat center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin:2px 4px;
+}
+
+.ql-container img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#content {
+    visibility: hidden;  /* 完全な非表示ではなく、要素の高さを確保する */
+    position: absolute;
+    left: -9999px;  /* 画面外に移動させ、レイアウトに影響させない */
+}
+
+#editor-container {
+    overflow-y: auto;
+}
+
+mark {
+    color: inherit;
+}
