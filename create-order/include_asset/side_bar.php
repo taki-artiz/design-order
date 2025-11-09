@@ -8,22 +8,22 @@ $base_url = str_replace($_SERVER['DOCUMENT_ROOT'], '', __DIR__);
         <div class="w-[150px] border-t border-gray-600">
             <?php
             if($_COOKIE['create_order'] === "artiz-creative"){
-                $topPage = "https://artiz-app.com/create-order/edit/creator_view.php";
+                $topPage = "https://***/create-order/edit/creator_view.php";
             }else{
-                $topPage = "https://artiz-app.com/create-order/edit/orders_view.php";
+                $topPage = "https://***/create-order/edit/orders_view.php";
             }
             ?>
             <?php if($_COOKIE['account_role'] === "admin"): ?>
                 <a href="<?= $topPage ?>" class="pt-6 pb-4 px-2 flex items-center justify-between hover:bg-gray-600">
                     <span>▶ 制作依頼</span>
                 </a>
-                <a href="https://artiz-app.com/create-order/analytics/analytics.php" class="py-4 px-2 flex items-center justify-between hover:bg-gray-600">
+                <a href="https://***/create-order/analytics/analytics.php" class="py-4 px-2 flex items-center justify-between hover:bg-gray-600">
                     <span>▶ 制作集計</span>
                 </a>
-                <a href="https://artiz-app.com/create-order/cost_table/cost_table.php" class="py-4 px-2 flex items-center justify-between hover:bg-gray-600">
+                <a href="https://***/create-order/cost_table/cost_table.php" class="py-4 px-2 flex items-center justify-between hover:bg-gray-600">
                     <span class="whitespace-nowrap">▶ 原価・外注価格</span>
                 </a>
-                <a href="https://artiz-app.com/create-order/sign_up/sign_up.php" class="py-4 px-2 flex items-center justify-between hover:bg-gray-600">
+                <a href="https://***/create-order/sign_up/sign_up.php" class="py-4 px-2 flex items-center justify-between hover:bg-gray-600">
                     <span class="whitespace-nowrap text-[15px]">▶ アカウント管理発行</span>
                 </a>
                 <a href="" class="absolute bottom-[75px] py-4 px-2 w-[150px] flex items-center justify-between hover:bg-gray-600">
@@ -62,7 +62,7 @@ $base_url = str_replace($_SERVER['DOCUMENT_ROOT'], '', __DIR__);
             document.cookie = "create_order=; path=/; max-age=0;";
             document.cookie = "account_role=; path=/; max-age=0;";
             // リダイレクト先
-            window.location.href = "https://artiz-app.com/create-order/login.php";
+            window.location.href = "https://***/create-order/login.php";
             });
         }
         });
